@@ -131,7 +131,9 @@ FUNC(void, FRNM_CODE) module_FrNm::InitFunction(
 #endif
 }
 
-FUNC(void, FRNM_CODE) module_FrNm::DeInitFunction(void){
+FUNC(void, FRNM_CODE) module_FrNm::DeInitFunction(
+   void
+){
 #if(STD_ON == FrNm_InitCheck)
    if(
          E_OK
@@ -154,7 +156,9 @@ FUNC(void, FRNM_CODE) module_FrNm::DeInitFunction(void){
 #endif
 }
 
-FUNC(void, FRNM_CODE) module_FrNm::MainFunction(void){
+FUNC(void, FRNM_CODE) module_FrNm::MainFunction(
+   void
+){
 #if(STD_ON == FrNm_InitCheck)
    if(
          E_OK
@@ -176,7 +180,9 @@ FUNC(void, FRNM_CODE) module_FrNm::MainFunction(void){
 #endif
 }
 
-FUNC(void, FRNM_CODE) module_FrNm::dummy(void){
+FUNC(void, FRNM_CODE) module_FrNm::dummy(
+   void
+){
 }
 
 /******************************************************************************/
