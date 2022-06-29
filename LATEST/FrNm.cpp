@@ -41,13 +41,9 @@ class module_FrNm:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-            Std_TypeReturn          IsInitDone{E_NOT_OK};
-      const CfgModule_TypeAbstract* lptrCfg{(CfgModule_TypeAbstract*)NULL_PTR};
             infPduRClient_Up        infPduRClient_FrNm;
 
    public:
-      module_FrNm(Std_TypeVersionInfo lVersionInfo) : abstract_module(lVersionInfo){
-      }
       FUNC(void, FRNM_CODE) InitFunction(
          CONSTP2CONST(CfgModule_TypeAbstract, FRNM_CONFIG_DATA, FRNM_APPL_CONST) lptrCfgModule
       );
@@ -72,18 +68,7 @@ CONSTP2VAR(infSchMClient, FRNM_VAR, FRNM_CONST) gptrinfSchMClient_FrNm = &FrNm;
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_FrNm, FRNM_VAR) FrNm(
-   {
-         FRNM_AR_RELEASE_VERSION_MAJOR
-      ,  FRNM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
-);
+VAR(module_FrNm, FRNM_VAR) FrNm;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
