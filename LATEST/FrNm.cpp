@@ -83,12 +83,7 @@ FUNC(void, FRNM_CODE) module_FrNm::InitFunction(
    ){
 #endif
       if(NULL_PTR != lptrCfgModule){
-         if(STD_HIGH){
-            lptrCfg = lptrCfgModule;
-         }
-         else{
-            lptrCfg = &PBcfgFrNm;
-         }
+         lptrCfg = lptrCfgModule;
       }
       else{
 #if(STD_ON == FrNm_DevErrorDetect)
