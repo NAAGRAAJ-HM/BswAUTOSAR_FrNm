@@ -7,9 +7,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Module.hpp"
-#include "CfgFrNm.hpp"
-#include "FrNm_core.hpp"
-#include "infFrNm_Exp.hpp"
+#include "FrNm.hpp"
 #include "infFrNm_Imp.hpp"
 
 /******************************************************************************/
@@ -32,27 +30,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class module_FrNm:
-      INTERFACES_EXPORTED_FRNM
-      public abstract_module
-   ,  public class_FrNm_Functionality
-{
-   private:
-/******************************************************************************/
-/* OBJECTS                                                                    */
-/******************************************************************************/
-            infPduRClient_Up        infPduRClient_FrNm;
-
-   public:
-      FUNC(void, FRNM_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, FRNM_CONFIG_DATA, FRNM_APPL_CONST) lptrCfgModule
-      );
-      FUNC(void, FRNM_CODE) DeInitFunction (void);
-      FUNC(void, FRNM_CODE) MainFunction   (void);
-      FRNM_CORE_FUNCTIONALITIES
-};
-
-extern VAR(module_FrNm, FRNM_VAR) FrNm;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
