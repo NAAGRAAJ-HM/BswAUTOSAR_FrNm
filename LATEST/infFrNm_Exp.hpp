@@ -8,9 +8,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "infFrNm_EcuM.hpp"
-#include "infFrNm_Dcm.hpp"
 #include "infFrNm_Det.hpp"
-#include "infFrNm_SchM.hpp"
 #include "infPduRClient_Up.hpp"
 
 /******************************************************************************/
