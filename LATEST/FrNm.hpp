@@ -7,6 +7,7 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "ConstFrNm.hpp"
 #include "CfgFrNm.hpp"
 #include "FrNm_core.hpp"
 #include "infFrNm_Exp.hpp"
@@ -31,6 +32,7 @@ class module_FrNm:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
+      const ConstFrNm_Type* lptrConst = (ConstFrNm_Type*)NULL_PTR;
       infPduRClient_Up infPduRClient_FrNm;
 
    public:
@@ -38,7 +40,8 @@ class module_FrNm:
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
       FUNC(void, FRNM_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, FRNM_CONFIG_DATA, FRNM_APPL_CONST) lptrCfgModule
+            CONSTP2CONST(ConstModule_TypeAbstract, FRNM_CONST,       FRNM_APPL_CONST) lptrConstModule
+         ,  CONSTP2CONST(CfgModule_TypeAbstract,   FRNM_CONFIG_DATA, FRNM_APPL_CONST) lptrCfgModule
       );
       FUNC(void, FRNM_CODE) DeInitFunction (void);
       FUNC(void, FRNM_CODE) MainFunction   (void);
