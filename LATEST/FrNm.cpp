@@ -61,7 +61,7 @@ FUNC(void, FRNM_CODE) module_FrNm::InitFunction(
             (NULL_PTR != lptrConstModule)
          && (NULL_PTR != lptrCfgModule)
       ){
-         lptrConst = lptrConstModule;
+         lptrConst = (const ConstFrNm_Type*)lptrConstModule;
          lptrCfg   = lptrCfgModule;
       }
       else{
