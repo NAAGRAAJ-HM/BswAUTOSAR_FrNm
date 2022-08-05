@@ -13,18 +13,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define FRNM_AR_RELEASE_VERSION_MAJOR                                          4
-#define FRNM_AR_RELEASE_VERSION_MINOR                                          3
+#define SERVICEFRNM_AR_RELEASE_VERSION_MAJOR                                          4
+#define SERVICEFRNM_AR_RELEASE_VERSION_MINOR                                          3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(FRNM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible FRNM_AR_RELEASE_VERSION_MAJOR!"
+#if(SERVICEFRNM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible SERVICEFRNM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(FRNM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible FRNM_AR_RELEASE_VERSION_MINOR!"
+#if(SERVICEFRNM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible SERVICEFRNM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -42,14 +42,14 @@
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_ServiceFrNm, FRNM_VAR) ServiceFrNm;
+VAR(module_ServiceFrNm, SERVICEFRNM_VAR) ServiceFrNm;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-FUNC(void, FRNM_CODE) module_ServiceFrNm::InitFunction(
-      CONSTP2CONST(ConstModule_TypeAbstract, FRNM_CONST,       FRNM_APPL_CONST) lptrConstModule
-   ,  CONSTP2CONST(CfgModule_TypeAbstract,   FRNM_CONFIG_DATA, FRNM_APPL_CONST) lptrCfgModule
+FUNC(void, SERVICEFRNM_CODE) module_ServiceFrNm::InitFunction(
+      CONSTP2CONST(ConstModule_TypeAbstract, SERVICEFRNM_CONST,       SERVICEFRNM_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   SERVICEFRNM_CONFIG_DATA, SERVICEFRNM_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == ServiceFrNm_InitCheck)
    if(
@@ -83,14 +83,14 @@ FUNC(void, FRNM_CODE) module_ServiceFrNm::InitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  FRNM_E_UNINIT
+         ,  SERVICEFRNM_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, FRNM_CODE) module_ServiceFrNm::DeInitFunction(
+FUNC(void, SERVICEFRNM_CODE) module_ServiceFrNm::DeInitFunction(
    void
 ){
 #if(STD_ON == ServiceFrNm_InitCheck)
@@ -108,14 +108,14 @@ FUNC(void, FRNM_CODE) module_ServiceFrNm::DeInitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  FRNM_E_UNINIT
+         ,  SERVICEFRNM_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, FRNM_CODE) module_ServiceFrNm::MainFunction(
+FUNC(void, SERVICEFRNM_CODE) module_ServiceFrNm::MainFunction(
    void
 ){
 #if(STD_ON == ServiceFrNm_InitCheck)
@@ -132,14 +132,14 @@ FUNC(void, FRNM_CODE) module_ServiceFrNm::MainFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  FRNM_E_UNINIT
+         ,  SERVICEFRNM_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, FRNM_CODE) module_ServiceFrNm::dummy(
+FUNC(void, SERVICEFRNM_CODE) module_ServiceFrNm::dummy(
    void
 ){
 }

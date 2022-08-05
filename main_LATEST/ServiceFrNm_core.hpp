@@ -12,11 +12,11 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define FRNM_CORE_FUNCTIONALITIES                                              \
-              FUNC(void, FRNM_CODE) dummy                          (void);     \
+#define SERVICEFRNM_CORE_FUNCTIONALITIES                                              \
+              FUNC(void, SERVICEFRNM_CODE) dummy                          (void);     \
 
-#define FRNM_CORE_FUNCTIONALITIES_VIRTUAL                                      \
-      virtual FUNC(void, FRNM_CODE) dummy                          (void) = 0; \
+#define SERVICEFRNM_CORE_FUNCTIONALITIES_VIRTUAL                                      \
+      virtual FUNC(void, SERVICEFRNM_CODE) dummy                          (void) = 0; \
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -27,7 +27,7 @@
 /******************************************************************************/
 class class_ServiceFrNm_Functionality{
    public:
-      FRNM_CORE_FUNCTIONALITIES_VIRTUAL
+      SERVICEFRNM_CORE_FUNCTIONALITIES_VIRTUAL
 };
 
 /******************************************************************************/

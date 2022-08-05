@@ -21,7 +21,7 @@
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
 typedef enum{
-      FRNM_E_UNINIT
+      SERVICEFRNM_E_UNINIT
 }ServiceFrNm_TypeServiceDetErrorCode;
 
 /******************************************************************************/
