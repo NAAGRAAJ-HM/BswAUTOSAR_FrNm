@@ -24,7 +24,7 @@
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
 class module_ServiceFrNm:
-      INTERFACES_EXMCALPORTED_SERVICEFRNM
+      INTERFACES_EXPORTED_SERVICEFRNM
       public abstract_module
    ,  public class_ServiceFrNm_Functionality
 {
