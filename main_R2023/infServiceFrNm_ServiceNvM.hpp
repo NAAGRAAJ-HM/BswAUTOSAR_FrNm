@@ -7,11 +7,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CONSTSERVICEFRNM_AR_RELEASE_VERSION_MAJOR                              4
-#define CONSTSERVICEFRNM_AR_RELEASE_VERSION_MINOR                              3
-
-#define Const_DefaultInit_ConstServiceFrNm                                                                               \
-   ,  {CONSTSERVICEFRNM_AR_RELEASE_VERSION_MAJOR, CONSTSERVICEFRNM_AR_RELEASE_VERSION_MINOR, 0x00,0xFF,0x01,'0','1','0'} \
+#define NvM_InitBlocksRom_ServiceFrNm                                                                          \
+   ,  {SERVICEFRNM_AR_RELEASE_VERSION_MAJOR, SERVICEFRNM_AR_RELEASE_VERSION_MINOR, 0x00,0xFF,0x01,'0','1','0'} \
 
 /******************************************************************************/
 /* EOF                                                                        */
